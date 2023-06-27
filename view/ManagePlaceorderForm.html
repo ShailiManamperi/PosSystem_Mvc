@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/Assets/Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/Assets/Bootstrap/js/bootstrap.min.js">
 
-    <title>Manage Customer</title>
     <title>Manage Place Order</title>
 </head>
 <body>
@@ -46,24 +45,21 @@
                 <div class="col">
                     <div class="input-group">
                         <span class="input-group-text">Date</span>
-                        <input class="form-control" type="text" placeholder="2023-05-17" aria-label="Disabled input example" disabled>
+                        <input class="form-control" type="text" placeholder="2023-06-27" aria-label="Disabled input example" disabled>
                     </div>
                 </div>
                 <div class="col">
                     <div class="input-group">
                         <span class="input-group-text">CustomerID</span>
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" id="customerid" aria-label="Default select example">
                             <option selected>Select ID</option>
-                            <option value="1">C001</option>
-                            <option value="2">C002</option>
-                            <option value="3">C003</option>
                         </select>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="input-group">
+                    <div class="input-group" id="name">
                         <span class="input-group-text">Customer Name</span>
-                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                        <input class="form-control" id="name1" type="text" placeholder="" aria-label="Disabled input example" disabled>
                     </div>
                 </div>
 
@@ -73,11 +69,8 @@
                 <div class="col">
                     <div class="input-group">
                         <span class="input-group-text">Item ID</span>
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" id="itemid" aria-label="Default select example">
                             <option selected>Select ID</option>
-                            <option value="1">I001</option>
-                            <option value="2">I002</option>
-                            <option value="3">I003</option>
                         </select>
                     </div>
                 </div>
@@ -115,7 +108,7 @@
             <div class="row mt-3">
                 <div class="col-10"></div>
                 <div class="col-2">
-                    <button type="button" class="btn btn-outline-success">Add to Cart</button>
+                    <button type="button" class="btn btn-outline-success" id="btncart">Add to Cart</button>
                     <button type="button" class="btn btn-outline-warning">Clear</button>
                 </div>
             </div>
@@ -174,6 +167,9 @@
         </div>
     </section>
 </main>
+<script src="../Assets/jquery/jquery-3.6.4.min.js"></script>
+<script src="../Assets/Bootstrap/js/bootstrap.min.js"></script>
+<script src="../Controller/PlaceOrderController.js"></script>
 
 </body>
 </html>
